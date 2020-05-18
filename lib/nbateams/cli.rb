@@ -1,5 +1,5 @@
 class Nbateams::CLI 
-  
+    def call 
     list_teams
     menu
     cliexit 
