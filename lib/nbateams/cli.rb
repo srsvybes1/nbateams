@@ -19,7 +19,7 @@ class Nbateams::CLI
       puts "Enter Your Team"
       input = gets.strip.downcase
 
-      if input = "Bulls"
+      if input == "Bulls" 
         the_team = @teams[input]
         puts "#{the_team.name} - #{the_team.coach} - #{the_team.championships}"
       elsif input == "list"
@@ -27,13 +27,10 @@ class Nbateams::CLI
       else
         puts "Error, type list or exit."
       end
-    end
+    end 
   end
 
   def exitcli
     puts "See you on the Court!"
   end
-end
-
-  
 end 

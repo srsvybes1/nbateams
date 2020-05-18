@@ -7,8 +7,8 @@ end
 def self.scrape_teams
   
 teams = []
-deals << self.scrape_bulls
-deals << self.scrape_knicks 
+teams << self.scrape_bulls
+#teams << self.scrape_knicks 
 team_1 = self.new 
 team_1.name = "name"
 team_1.coach = "coach"
@@ -29,4 +29,6 @@ teams
 end 
 def self.scrape_bulls 
   doc = Nokogiri::HTML(open("https://www.landofbasketball.com/teams/chicago_bulls.htm"))
+ # binding.pry
+end 
 end 
