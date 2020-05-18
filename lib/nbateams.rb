@@ -1,6 +1,2 @@
-require "nbateams/version"
-
-module Nbateams
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./nbateams/version"
+require_relative "./nbateams/cli"
