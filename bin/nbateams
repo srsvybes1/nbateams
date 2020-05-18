@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
+require "bundler/setup"
 require './lib/nbateams'
 Nbateams::CLI.new.call 
