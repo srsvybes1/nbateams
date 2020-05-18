@@ -8,8 +8,8 @@ class Nbateams::CLI
   def list_teams
     puts "Your NBA Teams"
     @teams = Nbateams::Teams.today
-    @teams.each.with_index(1) do |teams|
-      puts "#{teams.name} - #{teams.coach} - #{teams.salarycap}"
+    @teams.each.with_index(1) do |team|
+      puts "#{team.name} - #{team.coach} - #{team.championships}"
     end
   end
 
@@ -21,7 +21,7 @@ class Nbateams::CLI
 
       if input = "Bulls"
         the_team = @teams[input]
-        puts "#{the_team.name} - #{the_team.coach} - #{the_team.salarycap}"
+        puts "#{the_team.name} - #{the_team.coach} - #{the_team.championships}"
       elsif input == "list"
         list_teams
       else
