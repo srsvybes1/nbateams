@@ -29,6 +29,8 @@ teams
 end 
 def self.scrape_bulls 
   doc = Nokogiri::HTML(open("https://www.landofbasketball.com/teams/chicago_bulls.htm"))
- # binding.pry
+  name = doc.search("h1.tc-1").text
+  coach = 
+  binding.pry
 end 
 end 
