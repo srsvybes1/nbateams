@@ -43,6 +43,6 @@ def self.scrape_knicks
   websiteinfo =doc.search("div p")[2].text 
   record = doc.search("div p")[6].text 
   championships = doc.search("div p")[7].text
-  binding.pry 
+  #binding.pry 
 end 
 end 
